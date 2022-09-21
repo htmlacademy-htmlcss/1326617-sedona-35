@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Надежда Гаврилова](https://up.htmlacademy.ru/htmlcss/35/user/1326617).
-* Наставник: `Неизвестно`.
+* Наставник: `Roman Zheltov`.(https://htmlacademy.ru/profile/id1145037)
 
 ---
 
