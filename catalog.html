@@ -109,44 +109,44 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="control">
-                <input class="control-input" type="text" name="apartments">
+                <input class="control-input" type="text" name="apartments" placeholder="0 от">
               </label>
+              <label class="control">
+                <input class="control-input" type="text" name="apartments" placeholder="9000 до">
+              </label>
+              <input type="range" min="0" max="9000" step="1" value="7000">
             </fieldset>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <button class="button" type="submit">Применить</button>
-              </li>
-              <li class="catalog-filter-item">
-                <button class="button" type="submit">Сбросить</button>
-              </li>
-            </ul>
+            <button class="button" type="submit">Применить</button>
+            <button class="button" type="submit">Сбросить</button>
           </form>
         </div>
       </section>
       <section class="catalog">
-        <span class="catalog-sorting">Найдено гостиниц: 38</span>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <ul class="catalog-show-list">
-          <li class="catalog-show-item">
-            <a href="#" class="button button-select">
-              <span class="visually-hidden">Показать таблицей</span>
-            </a>
-          </li>
-          <li class="catalog-show-item">
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать слайд-шоу</span>
-            </a>
-          </li>
-          <li class="catalog-show-item">
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
-          </li>
-        </ul>
+        <div class="catalog-sorting">
+          <p class="catalog-sorting-result">Найдено гостиниц: 38</p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="catalog-show-list">
+            <li class="catalog-show-item">
+              <a href="#" class="button button-select">
+                <span class="visually-hidden">Показать таблицей</span>
+              </a>
+            </li>
+            <li class="catalog-show-item">
+              <a href="#" class="button button-light">
+                <span class="visually-hidden">Показать слайд-шоу</span>
+              </a>
+            </li>
+            <li class="catalog-show-item">
+              <a href="#" class="button button-light">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
