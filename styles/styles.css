@@ -18,6 +18,125 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: white;
-  color: black;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+}
+
+.visually-hidden{
+  visibility: hidden;
+}
+
+.navigation-item{
+  font-size: 20px;
+  line-height: 24px;
+  list-style-type: none;
+  text-decoration: none;
+}
+.navigation-link{
+  text-decoration: none;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+.navigation-button{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color:#fff;
+}
+
+.hero{
+  width: 1200px;
+  height: 485px;
+  margin: 0 auto;
+  background-image: url(../images/divider.png), url(../images/index_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: gray;
+}
+.advantages-about-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.advantages-about-description{
+  text-align: center;
+}
+.advantages-item{
+  list-style-type: none;
+}
+.advantages-title{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.advantages-description{
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+.call-to-action-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call-to-action-description{
+  text-align: center;
+}
+.call-to-action-search{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color:#fff;
+}
+.subscribe{
+  background-image: url(../images/subscribe.jpg);
+  width: 1200px;
+  height: 414px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: gray;
+  margin: 0 auto;
+}
+.subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+}
+.subscribe-description{
+  text-align: center;
+  color:#fff;
+}
+.subscribe-button{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+}
+.footer-contacts-phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.footer-social-network-item{
+  text-decoration: none;
+  list-style-type: none;
 }
