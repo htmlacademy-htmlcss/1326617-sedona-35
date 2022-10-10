@@ -24,7 +24,7 @@ body {
 }
 
 .visually-hidden{
-  visibility: hidden;
+  display: none;
 }
 
 .navigation-item{
