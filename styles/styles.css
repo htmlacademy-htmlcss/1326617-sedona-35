@@ -24,6 +24,7 @@ body {
   display:flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
 }
 .main-container{
   flex-grow: 1;
@@ -81,6 +82,7 @@ html {
   text-decoration: none;
   color:#fff;
   background-color: #756157;
+  margin-left: 20px;
 }
 .page-container{
   width: 1200px;
@@ -115,7 +117,9 @@ html {
   padding-left: 85px;
   padding-right: 85px;
   margin: 0;
-
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 .advantages-list{
   display: flex;
@@ -155,6 +159,16 @@ html {
   line-height: 21px;
   text-align: center;
 }
+.call-to-action{
+  width: 1200px;
+}
+.call-to-action-content{
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  justify-content: center;
+  margin: 0 auto;
+}
 .call-to-action-title{
   font-size: 30px;
   line-height: 36px;
@@ -182,6 +196,13 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-color: gray;
+  margin: 0 auto;
+}
+.subscribe-content{
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  justify-content: center;
   margin: 0 auto;
 }
 .subscribe-title{
@@ -212,6 +233,21 @@ html {
   text-align: center;
   text-decoration: none;
   color: #000;
+}
+.page-footer{
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-social-network-list{
+  display: flex;
+  flex-direction: row;
+  width: 142px;
+  margin: 0 auto;
+}
+.footer-contact{
+  flex-grow: 1;
 }
 .footer-social-network-item{
   list-style-type: none;
