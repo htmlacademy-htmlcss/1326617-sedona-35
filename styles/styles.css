@@ -30,6 +30,9 @@ body {
 
 .main-container{
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .visually-hidden{
@@ -41,15 +44,18 @@ html {
 .main-header{
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0 70px;
 }
 .navigation{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: space-between;
   margin: 0 auto;
-  background-color: #fff;
-  padding: 0 70px;
 }
 
 .navigation-block-one{
@@ -58,13 +64,23 @@ html {
   justify-content: center;
   width: 507px;
 }
+.button{
+  border-radius: 4px;
+}
 .navigation-block-two{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
   margin-left: auto;
 }
-
+.navigation-button{
+  padding: 8px 34px;
+  box-sizing:content-box;
+  display: block;
+}
+.navigation-btn{
+  padding: 22px 16px;
+}
 .navigation-item{
   font-size: 20px;
   line-height: 24px;
@@ -75,10 +91,11 @@ html {
 .navigation-list{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 30px;
-  width: 339px;
+  justify-content: center;
+  align-items: center;
+  min-width: 339px;
   margin: 0;
+  margin-left: 30px;
   padding: 0;
 }
 .navigation-link{
@@ -86,7 +103,6 @@ html {
   font-weight: 700;
   text-decoration: none;
   color: #000;
-  padding: 22px 12px;
 }
 .navigation-button{
   font-family: inherit;
@@ -102,6 +118,7 @@ html {
 .page-container{
   width: 1200px;
   margin: 0 auto;
+
 }
 .hero{
   width: 1200px;
@@ -155,9 +172,6 @@ html {
   padding: 0;
 }
 
-
-
-
 .advantages-image{
   padding: 0;
   margin: 0;
@@ -208,9 +222,12 @@ html {
 .call-to-action-content{
   display: flex;
   flex-direction: column;
-  width: 592px;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  width: 592px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  margin:0 auto;
 }
 .call-to-action-title{
   font-size: 30px;
@@ -218,9 +235,11 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 .call-to-action-description{
   text-align: center;
+  margin: 0 0 54px 0;
 }
 .call-to-action-search{
   font-size: 20px;
@@ -231,6 +250,10 @@ html {
   text-decoration: none;
   color:#fff;
   background-color: #756157;
+  padding: 8px 50px;
+  box-sizing:content-box;
+  display: block;
+  border-radius: 4px;
 }
 .subscribe-background{
   background-image: url(../images/subscribe.jpg);
