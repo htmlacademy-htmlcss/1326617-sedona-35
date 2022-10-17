@@ -43,10 +43,12 @@ html {
 }
 .main-header{
   width: 1200px;
+  min-height: 64px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
+  align-items: flex-start;
   box-sizing: border-box;
   background-color: #fff;
   padding: 0 70px;
@@ -55,18 +57,20 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
   margin: 0 auto;
+  min-height: 64px;
 }
 
 .navigation-block-one{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
   width: 507px;
+
 }
-.button{
-  border-radius: 4px;
-}
+
 .navigation-block-two{
   display: flex;
   flex-direction: row;
@@ -74,19 +78,27 @@ html {
   margin-left: auto;
 }
 .navigation-button{
-  padding: 8px 34px;
-  box-sizing:content-box;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  min-height: 36px;
+  border-radius: 4px;
 }
 .navigation-btn{
-  padding: 22px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 64px;
 }
 .navigation-item{
   font-size: 20px;
   line-height: 24px;
   list-style-type: none;
   text-decoration: none;
-  padding: 20px 16px;
 }
 .navigation-list{
   display: flex;
@@ -102,6 +114,18 @@ html {
   text-decoration: none;
   font-weight: 700;
   color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  flex-basis: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+.navigation-link-current{
+border-bottom: 2px #756257 solid;
 }
 .navigation-button{
   font-family: inherit;
@@ -217,6 +241,8 @@ html {
 .call-to-action{
   width: 1200px;
   background-color: #fff;
+  padding: 96px 304px;
+  box-sizing: border-box;
 }
 .call-to-action-content{
   display: flex;
@@ -224,9 +250,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 592px;
-  padding-top: 96px;
-  padding-bottom: 96px;
-  margin:0 auto;
+  margin:0;
 }
 .call-to-action-title{
   font-size: 30px;
@@ -254,21 +278,21 @@ html {
   display: block;
   border-radius: 4px;
 }
-.subscribe-background{
+.subscribe-container{
   background-image: url(../images/subscribe.jpg);
   width: 1200px;
   height: 414px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: gray;
-  margin: 0 auto;
+  margin: 0;
 }
 .subscribe-content{
   display: flex;
   flex-direction: column;
-  width: 592px;
-  justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  margin: 0;
+  padding: 96px 258px 104px 258px;
 }
 .subscribe-title{
   font-size: 30px;
@@ -277,10 +301,27 @@ html {
   text-transform: uppercase;
   text-align: center;
   color:#fff;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .subscribe-description{
   text-align: center;
   color:#fff;
+  margin: 0;
+  margin-bottom: 54px;
+}
+.subscribe-form{
+  display: flex;
+  flex-direction: row;
+
+}
+.subscribe-form-input{
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 14px 20px;
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 24px;
 }
 .subscribe-button{
   font-size: 20px;
@@ -291,6 +332,14 @@ html {
   color:#fff;
   background-color: #82B3D3;
   border:none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  min-width: 232px;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
 }
 .footer-contacts-phone{
   font-size: 40px;
@@ -302,26 +351,35 @@ html {
 .page-footer{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
+  padding: 40px 70px 30px 70px;
 }
 .footer-social-network-list{
   display: flex;
   flex-direction: row;
+  justify-content:space-between;
   width: 142px;
   margin: 0 auto;
+  padding: 0;
 }
 .footer-contact{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
+  min-height: 50px;
 }
 .footer-contact-logo{
   width: 115px;
 }
 .footer-social-network-item{
   list-style-type: none;
+  padding: 0 10px;
 }
 .footer-social-network-vk{
   text-decoration: none;
@@ -332,6 +390,8 @@ html {
 .footer-social-network-youtube{
   text-decoration: none;
 }
+
+
 
 
 .filter-block{
@@ -451,16 +511,23 @@ margin: 0 auto;
   background-color: none;
   border: none;
 }
+
 .catalog{
   display:flex;
   flex-direction: column;
+  width: 1060px;
+  padding: 50px 70px 60px 70px;
+  padding-right: 70px;
   margin: 0 auto;
+  background-color: #fff;
 }
 .catalog-sorting{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
+  padding: 0;
   width: 1060px;
 }
 .catalog-sorting-right{
@@ -474,6 +541,7 @@ margin: 0 auto;
   line-height: 36px;
   font-weight: 700;
   color: #000;
+  margin: 0;
 }
 .select-control{
   font-family: inherit;
@@ -481,17 +549,31 @@ margin: 0 auto;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  width: 292px;
+  padding: 14px 20px;
   height: 49px;
 }
 .catalog-show-list{
   display: flex;
   flex-direction: row;
   width: 160px;
-  padding-left: 70px;
+  min-height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-left: 70px;
 }
 .catalog-show-item{
   list-style-type: none;
+
+}
+.button-show{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 17px 16px;
+  background-color: #fff;
 }
 .button-show-select{
   border-color: #000;
@@ -626,24 +708,24 @@ margin: 0 auto;
   border: none;
 }
 .subscribe-no-background{
+  background-color: #fff;
+  min-width: 684px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
+  min-height: 414px;
 }
-.subscribe-title-no-back{
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color:#000;
-}
-.subscribe-description-no-back{
-  text-align: center;
-  color:#000;
-}
+
 .subscribe-form{
   width: 684px;
+}
+.black{
+  color: #000;
+}
+.input-gray{
+  background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 24px;
 }
