@@ -506,10 +506,32 @@ border-bottom: 2px #756257 solid;
   padding: 0;
   margin: 0;
 }
-.control-input-radio{
+.radio-disk{
   background-color: #fff;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+}
+.radio-disk-select{
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+}
+.radio-disk-select::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .control-input-checkbox{
   background-color: #fff;
@@ -569,7 +591,6 @@ border-bottom: 2px #756257 solid;
   background-color: transparent;
   margin-top: 32px;
 }
-
 .catalog{
   display:flex;
   flex-direction: column;
@@ -638,15 +659,6 @@ border-bottom: 2px #756257 solid;
 .button-selected{
   border: 2px solid #000;
 }
-/*
-.product-list{
-  display: flex;
-  width: 1060px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
-}
-*/
 .product-list{
   display: grid;
   margin: 0 auto;
@@ -656,45 +668,16 @@ border-bottom: 2px #756257 solid;
   padding: 0;
   gap: 20px;
 }
-/*
 .product-card{
   padding:19px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  box-sizing: border-box;
-  min-height: 438px;
-
   grid-column: 1/-2;
-
-}
-*/
-.product-card{
-  padding:19px;
-  border: 1px solid #E6E6E6;
-  border-radius: 4px;
-
-
-  grid-column: 1/-2;
-
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: auto auto auto auto auto;
   gap: 16px 20px;
 }
-/*
-.product-item:nth-child(3n){
-  margin-right: 0;
-}
-.product-item{
-  list-style-type: none;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-*/
 .product-item{
   list-style-type: none;
 }
@@ -723,12 +706,6 @@ border-bottom: 2px #756257 solid;
   font-weight: 400;
   color: #333333;
   margin: 0;
-  /*
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 300px;
-  */
 }
 .description-name{
   grid-column: 1/2;
@@ -878,7 +855,6 @@ border-bottom: 2px #756257 solid;
   min-height: 414px;
   min-width: 684px;
 }
-
 .subscribe-form{
   min-width: 684px;
 }
