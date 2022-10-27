@@ -384,7 +384,9 @@ border-bottom: 2px #756257 solid;
 .footer-social-network-youtube{
   text-decoration: none;
 }
-
+.button{
+  cursor: pointer;
+}
 .btn-brown:hover{
   background-color: #615048;
 }
@@ -571,6 +573,7 @@ border-bottom: 2px #756257 solid;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border: none;
 }
 .control-input-checkbox{
   background-color: #fff;
@@ -624,6 +627,7 @@ border-bottom: 2px #756257 solid;
   justify-content: center;
   align-items: center;
   padding: 8px 50px;
+
 }
 .button-reset{
   background-color: transparent;
