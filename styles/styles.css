@@ -97,6 +97,7 @@ html {
   line-height: 24px;
   list-style-type: none;
   text-decoration: none;
+  position: relative;
 }
 .navigation-list{
   display: flex;
@@ -118,8 +119,15 @@ html {
   align-items: center;
   padding: 20px 16px;
 }
-.navigation-link-current{
-border-bottom: 2px #756257 solid;
+
+.navigation-link-current::before{
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 .navigation-button{
   font-family: inherit;
@@ -179,6 +187,7 @@ border-bottom: 2px #756257 solid;
   align-items:center;
   justify-content: center;
   box-sizing: border-box;
+  position: relative;
 }
 .advantages-list{
   display: flex;
@@ -225,17 +234,26 @@ border-bottom: 2px #756257 solid;
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
+
 }
 .title-row-four{
   margin: 0;
   margin-top: 30px;
+}
+
+.title-row-two::after{
+  height: 2px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
 }
 .advantages-description{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   margin: 0;
-  margin-top:30px;
+  margin-top: 30px;
 }
 .call-to-action{
   width: 1200px;
