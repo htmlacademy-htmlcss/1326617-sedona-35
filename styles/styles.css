@@ -187,7 +187,7 @@ html {
   align-items:center;
   justify-content: center;
   box-sizing: border-box;
-  position: relative;
+
 }
 .advantages-list{
   display: flex;
@@ -233,20 +233,43 @@ html {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
 }
 .title-row-four{
   margin: 0;
   margin-top: 30px;
+  padding: 0;
 }
-
-.title-row-two::after{
+.title-dark{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title-dark::after{
+  position: absolute;
+  bottom: 0;
   height: 2px;
   width: 60px;
   background-color: rgba(0, 0, 0, 0.3);
   content: "";
+}
+.title-light{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title-light::after{
   position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
 }
 .advantages-description{
   font-size: 18px;
@@ -564,24 +587,35 @@ html {
   color: #fff;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.catalog-filter-item label{
+  margin-left: 16px;
 }
 .radio-disk{
   background-color: #fff;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: none;
   position: relative;
 }
-.radio-disk-select{
+
+.radio-disk{
   background-color: #fff;
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  outline: none;
   border: none;
   position: relative;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.radio-disk-select::after {
+.radio-disk:checked::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -591,15 +625,36 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: none;
+  outline: none;
+  border: 0;
 }
+
 .control-input-checkbox{
   background-color: #fff;
   width: 20px;
   height: 19px;
-  border: none;
+  border: 0;
   border-radius: 4px;
+  background-image: none;
+  position: relative;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+.control-input-checkbox:checked::after{
+  content: "";
+  background-color: #fff;
+  width: 20px;
+  height: 19px;
+  border: 0;
+  border-radius: 4px;
+  background-image: url(../images/tick_checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
 .control-input{
   border: none;
   padding: 12px 20px;
@@ -607,10 +662,32 @@ html {
   line-height: 24px;
   max-width: 143px;
   box-sizing: border-box;
-  display: flex;
+
+}
+.control-input::placeholder{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.input-text{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 12px;
+  left: 106px;
+}
+.right-input{
+  position: relative;
+}
+.left-input{
+  position: relative;
 }
 .input-left{
   border-radius: 4px 0 0 4px;
+
 }
 .input-right{
   border-radius: 0 4px 4px 0;

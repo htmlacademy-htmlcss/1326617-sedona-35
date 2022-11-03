@@ -72,22 +72,16 @@
                   <legend class="catalog-filter-title">Инфраструктура</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input-checkbox" type="checkbox" name="pool" checked>
-                        Бассейн
-                      </label>
+                      <input id="checkbox-1" class="control-input-checkbox" type="checkbox" name="pool" checked>
+                      <label for="checkbox-1" class="control">Бассейн</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input-checkbox" type="checkbox" name="parking" checked>
-                        Парковка
-                      </label>
+                      <input id="checkbox-2" class="control-input-checkbox" type="checkbox" name="parking" checked>
+                      <label for="checkbox-2" class="control">Парковка</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input-checkbox" type="checkbox" name="wi-fi">
-                        Wi-Fi
-                      </label>
+                      <input id="checkbox-3" class="control-input-checkbox" type="checkbox" name="wi-fi">
+                      <label for="checkbox-3" class="control">Wi-Fi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -95,22 +89,16 @@
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input-radio radio-disk-select" type="radio" name="hotel" checked>
-                        Гостиница
-                      </label>
+                      <input id="input-radio-1" class="radio-disk" type="radio" name="hotel" value="гостиница" checked>
+                      <label for="control-input-radio" class="control">Гостиница</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input-radio radio-disk" type="radio" name="motel">
-                        Мотель
-                      </label>
+                      <input id="input-radio-2" class="radio-disk" type="radio" name="motel" value="мотель">
+                      <label for="input-radio-2" class="control">Мотель</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input-radio radio-disk" type="radio" name="apartments">
-                        Апартаменты
-                      </label>
+                      <input id="input-radio-3" class="radio-disk" type="radio" name="apartments" value="апартаменты">
+                      <label for="input-radio-3" class="control">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -119,12 +107,16 @@
                 <fieldset class="catalog-filter-group-price">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <div class="control-block">
-                      <label class="control">
-                        <input class="control-input input-left" type="text" name="apartments" placeholder="0 от">
-                      </label>
-                      <label class="control">
-                        <input class="control-input input-right" type="text" name="apartments" placeholder="9000 до">
-                      </label>
+                      <div class="left-input">
+                        <label for="input-from-to" class="control visually-hidden">от</label>
+                        <input id="input-from-to" class="control-input input-left" type="text" name="apartments" placeholder="0">
+                        <span class="input-text">от</span>
+                      </div>
+                      <div class="right-input">
+                        <label for="input-before" class="control visually-hidden">до</label>
+                        <input id="input-before" class="control-input input-right" type="text" name="apartments" placeholder="9000">
+                        <span class="input-text">до</span>
+                      </div>
                     </div>
                     <input class="control-line" type="range" min="0" max="9000" step="1" value="7000">
                 </fieldset>
