@@ -730,7 +730,7 @@ html {
 .catalog-filter-right{
   min-width: 549px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 .group-right{
@@ -742,20 +742,15 @@ html {
   margin: 0;
   display: flex;
   flex-direction: column;
-  max-width: 288px;
+  min-width: 288px;
 }
-.form-control{
 
-}
 .control-block{
   display: flex;
   justify-content: space-between;
   margin-bottom: 36px;
-}
-
-.control-block {
-  display: flex;
-  justify-content: space-between;
+  flex-basis: auto;
+  box-sizing: border-box;
 
 }
 .control-input{
@@ -763,9 +758,8 @@ html {
   padding: 10px 18px;
   font-size: 18px;
   line-height: 24px;
-  max-width: 143px;
   box-sizing: border-box;
-
+  width: 143px;
 }
 .control-input::placeholder{
   font-size: 18px;
@@ -831,6 +825,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 191px;
+  margin-left: 70px;
 }
 
 input[type=range] {
