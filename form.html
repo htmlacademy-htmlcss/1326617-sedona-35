@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="body-form-back">
+    <div class="form-search">
+      <h1 class="visually-hidden">Форма поиска гостиниц в Седоне</h1>
+      <span></span>
+      <form>
+        <h2>Поиск гостиницы в Седоне</h2>
+        <div class="input-data">
+          <label for="data-1" class="entry-data">Дата заезда:</label>
+          <input id="data-1" class="entry" type="number" name="data" placeholder="27 апреля 2020">
+          <span>Мы не можем отправить вас в прошлое.</span>
+        </div>
+        <div class="input-data">
+          <label for="data-2" class="exit-data">Дата выезда:</label>
+          <input id="data-2" class="exit" type="number" name="data" placeholder="1 сентября 2021">
+          <span>На эти даты есть свободные номера. Пока есть.</span>
+        </div>
+        <div class="input-counter">
+          <label for="adult" class="counter">Взрослые:</label>
+          <button></button>
+          <input id="adult" class="counter-adult" type="text" data-max-count="10" name="quantity" placeholder="2">
+          <button></button>
+        </div>
+        <div class="input-counter">
+          <label for="child" class="counter">Взрослые:</label>
+          <button></button>
+          <input id="child" class="counter-child" type="text" data-max-count="10" name="quantity" placeholder="2">
+          <button></button>
+        </div>
+        <button>Найти</button>
+      </form>
+    </div>
+  </body>

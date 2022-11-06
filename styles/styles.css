@@ -918,7 +918,7 @@ input[type=range]::-ms-thumb {
   border: 2px #83B3D3 solid;
 }
 .toggle-min{
-left: 0px;
+left: 0;
 }
 .toggle-max{
   left: 207px;
@@ -1280,4 +1280,16 @@ left: 0px;
   font-size: 18px;
   line-height: 24px;
   border: 2px #F2F2F2 solid;
+}
+
+
+.body-form-back{
+  background-color: #c6c6c6;
+}
+.form-search{
+  background-color: #fff;
+  width: 717px;
+  padding: 64px 70px;
+  margin: 0 auto;
+  border-radius: 30px;
 }
