@@ -89,15 +89,15 @@
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <input id="input-radio-1" class="radio-disk" type="radio" name="hotel" value="гостиница" checked>
+                      <input id="input-radio-1" class="radio-disk" type="radio" name="type-house" value="hotel" checked>
                       <label for="control-input-radio" class="control">Гостиница</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input id="input-radio-2" class="radio-disk" type="radio" name="motel" value="мотель">
+                      <input id="input-radio-2" class="radio-disk" type="radio" name="type-house" value="motel">
                       <label for="input-radio-2" class="control">Мотель</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input id="input-radio-3" class="radio-disk" type="radio" name="apartments" value="апартаменты">
+                      <input id="input-radio-3" class="radio-disk" type="radio" name="type-house" value="apartments">
                       <label for="input-radio-3" class="control">Апартаменты</label>
                     </li>
                   </ul>
@@ -118,7 +118,17 @@
                         <span class="input-text">до</span>
                       </div>
                     </div>
-                    <input class="control-line" type="range" min="0" max="9000" step="1" value="7000">
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 0px; width: 226px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену</span>
+                          </button>
+                        </div>
+                      </div>
                 </fieldset>
                 <div class="filter-buttons">
                   <input class="button-form button-apply button btn-blue" type="submit" value="Применить">
@@ -133,11 +143,13 @@
         <div class="catalog-sorting">
           <p class="catalog-sorting-result">Найдено гостиниц: 38</p>
           <div class="catalog-sorting-right">
-            <select class="select-control" name="sorting">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="popular">Сначала популярные</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
+            <div class="select">
+              <select class="select-control" name="sorting">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
             <ul class="catalog-show-list">
               <li class="catalog-show-item">
                 <button class="button-show button-selected">
