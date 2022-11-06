@@ -596,7 +596,7 @@ html {
 .breadcrumbs-link:active{
   color:rgba(255, 255, 255, 0.3);
 }
-.inner-header{
+.imain-inner{
   width: 1060px;
   margin: 0 auto;
 }
@@ -615,6 +615,9 @@ html {
 .catalog-filter-item{
   list-style-type: none;
   color:#fff;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
 }
 .catalog-filter-title{
   font-size: 20px;
@@ -730,7 +733,7 @@ html {
 .catalog-filter-right{
   min-width: 549px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-end;
 }
 .group-right{
@@ -742,16 +745,15 @@ html {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-width: 288px;
+  width: 288px;
 }
 
 .control-block{
   display: flex;
   justify-content: space-between;
   margin-bottom: 36px;
-  flex-basis: auto;
   box-sizing: border-box;
-
+  width: 288px;
 }
 .control-input{
   border: 2px #fff solid;
@@ -759,7 +761,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
-  width: 143px;
+
 }
 .control-input::placeholder{
   font-size: 18px;
@@ -785,6 +787,7 @@ html {
 
 .input-left{
   border-radius: 4px 0 0 4px;
+  width: 143px;
 }
 .input-left:focus{
   border: 2px #000 solid;
@@ -803,7 +806,7 @@ html {
 .input-right{
   border-radius: 0 4px 4px 0;
   margin: 0;
-  margin-left: 2px;
+  width: 143px;
 }
 .input-right:focus{
   border: 2px #000 solid;
@@ -830,7 +833,7 @@ html {
 
 input[type=range] {
   -webkit-appearance: none;
-  width: 100%;
+  width: 288px;
   background: transparent;
 }
 
@@ -1222,6 +1225,8 @@ input[type=range]::-ms-thumb {
   color: rgba(255, 255, 255, 0.3);
 }
 .link-more{
+  font-size: 22px;
+  line-height: 26px;
   color:#000;
   background-color: #fff;
   border: none;
