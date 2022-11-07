@@ -1288,8 +1288,137 @@ left: 0;
 }
 .form-search{
   background-color: #fff;
-  width: 717px;
+  width: 577px;
   padding: 64px 70px;
   margin: 0 auto;
   border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.data-label{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.text-info{
+  font-size: 16px;
+  line-height: 21px;
+}
+.title-form{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform:uppercase;
+
+}
+
+.block-title{
+  display: flex;
+  justify-content: space-between;
+}
+.data-block{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.input-counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.input-calendar{
+  padding: 12px 20px;
+  border-radius: 4px;
+  width: 440px;
+}
+.data-exit{
+  position: relative;
+}
+.data-exit::before{
+  background-image: url(../images/date.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.text-info-error{
+  position:relative;
+  top: 0;
+  left: 137px;
+}
+.text-info-true{
+  position:relative;
+  top: 0;
+  left: 137px;
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.counters{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.counter{
+  display: flex;
+  width: 110px;
+  background-color: #F2F2F2;
+  margin-left: 46px;
+
+}
+.counter-input{
+  flex-grow: 1;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 31px;
+}
+.counter-input::placeholder{
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.button-counter-minus{
+  border: none;
+  background-image: url(../images/button-minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 23px 13px;
+  border-radius: 4px 0 0 4px;
+}
+.button-counter-plus{
+  border: none;
+  background-image: url(../images/button-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 17px 13px;
+  border-radius: 0 4px 4px 0;
+}
+.search-button{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+
+  border:none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 0;
 }
