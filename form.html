@@ -9,22 +9,28 @@
     <div class="form-search">
       <div class="block-title">
         <h1 class="title-form">Поиск гостиницы в Седоне</h1>
-        <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-        </button>
+        <div class="modal-close-button">
+          <button class="close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
       </div>
       <form class="form">
         <div class="data">
           <div class="data-block">
             <label for="data-1" class="data-label label-entry">Дата заезда:</label>
-            <input id="data-1" class="input-calendar input-gray data-entry" type="number" name="data" placeholder="27 апреля 2020">
+            <div class="block-input">
+              <input id="data-1" class="input-calendar data-entry" type="text" name="data" placeholder="27 апреля 2020">
+            </div>
           </div>
           <span class=" text-info text-info-error">Мы не можем отправить вас в прошлое.</span>
         </div>
         <div class="data">
           <div class="data-block">
             <label for="data-2" class="data-label label-exit">Дата выезда:</label>
-            <input id="data-2" class="input-calendar input-gray data-exit" type="number" name="data" placeholder="1 сентября 2021">
+            <div class="block-input">
+              <input id="data-2" class="input-calendar input-gray data-exit" type="text" name="data" placeholder="1 сентября 2021">
+            </div>
           </div>
           <span class="text-info text-info-true">На эти даты есть свободные номера. Пока есть.</span>
         </div>
@@ -33,28 +39,49 @@
             <label for="adult" class="data-label label-old">Взрослые:</label>
             <div class="counter counter-block1">
               <button class="button-counter-minus">
+                <svg class="icon-quantity" width="14" height="2"  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v2h14V0H0Z">
+                </svg>
                 <span class="visually-hidden">Минус</span>
               </button>
               <input id="adult" class="counter-input" type="text" data-max-count="10" name="quantity" placeholder="2">
               <button class="button-counter-plus">
+                <svg class="icon-quantity" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z">
+                </svg>
                 <span class="visually-hidden">Плюс</span>
               </button>
             </div>
           </div>
           <div class="input-counter">
-            <label for="child" class="data-label label-child">Дети:</label>
+            <div class="label-child">
+              <label for="child" class="data-label ">Дети:</label>
+              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/>
+              </svg>
+              <div class="pop-up-block">
+                <span class="pop-up">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <svg class="pop-up-triangle" width="19" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M9.5 0 19 9H0l9.5-9Z" fill="#333"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h19v9H0z"/></clipPath></defs></svg>
+              </div>
+            </div>
             <div class="counter counter-block2">
               <button class="button-counter-minus">
+                <svg class="icon-quantity" width="14" height="2"  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v2h14V0H0Z">
+                </svg>
                 <span class="visually-hidden">Минус</span>
               </button>
               <input id="child" class="counter-input" type="text" data-max-count="10" name="quantity" placeholder="2">
               <button class="button-counter-plus">
+                <svg class="icon-quantity" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z">
+                </svg>
                 <span class="visually-hidden">Плюс</span>
               </button>
             </div>
           </div>
         </div>
-        <button class="search-button button btn-blue">Найти</button>
+        <button class="search-button button btn-blue" type="submit">Найти</button>
       </form>
     </div>
   </body>
