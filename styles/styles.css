@@ -25,6 +25,8 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0 auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .body-container{
   width: 1200px;
@@ -106,8 +108,6 @@ html {
   height: 20px;
 }
 .navigation-item{
-  font-size: 20px;
-  line-height: 24px;
   list-style-type: none;
   text-decoration: none;
   position: relative;
@@ -122,14 +122,17 @@ html {
   padding: 0;
 }
 .navigation-link{
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
   text-decoration: none;
   font-weight: 700;
   color: #000;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 16px;
+  align-items: center;
+  padding: 21px 16px 19px;
 }
 
 .navigation-link-current::before{
@@ -346,7 +349,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 96px 258px 104px 258px;
+  padding: 98px 258px 104px 258px;
 }
 .subscribe-title{
   font-size: 30px;
@@ -362,7 +365,7 @@ html {
   text-align: center;
   color:#fff;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 .subscribe-form{
   display: flex;
@@ -371,8 +374,9 @@ html {
 .subscribe-form-input{
   border: 2px #fff solid;
   border-radius: 4px 0 0 4px;
-  padding: 10px 20px;
+  padding: 11px 20px 9px 18px;
   flex-grow: 1;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
 }
@@ -393,6 +397,7 @@ html {
   outline-offset: 0;
 }
 .subscribe-button{
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -410,7 +415,7 @@ html {
 }
 .page-footer{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   min-width: 1200px;
@@ -432,6 +437,7 @@ html {
   text-align: center;
   text-decoration: none;
   color: #000;
+  vertical-align: middle;
 }
 .footer-contacts-phone:hover{
   color: #756157;
@@ -446,13 +452,16 @@ html {
 .footer-contact-logo{
   width: 115px;
 }
-.logo-html:hover{
+.logo-html_academy{
+  vertical-align: middle;
+}
+.logo-html_academy:hover{
   fill:#756157;
 }
-.logo-html:focus{
+.logo-html_academy:focus{
   fill:#756157;
 }
-.logo-html:active{
+.logo-html_academy:active{
   fill:rgba(117, 97, 87, 0.3);
 }
 
@@ -469,15 +478,17 @@ html {
 .footer-social-network-item{
   list-style-type: none;
   margin: 0;
-  padding: 7px 10px;
+  padding: 7px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  max-width: 47px;
   flex-grow: 1;
 }
 .navigation-icon{
   fill: #83B3D3;
+  vertical-align: middle;
 }
 .navigation-icon:hover{
   fill: #68A2CA;
@@ -609,13 +620,16 @@ html {
   display: flex;
   justify-content:flex-start;
   align-items: center;
+  font-family: inherit;
 }
 .catalog-filter-title{
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color:#fff;
+  padding: 0;
   padding-bottom: 32px;
+  font-family: inherit;
 }
 .catalog-filter-group{
   border: none;
@@ -636,7 +650,13 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
+}
+.list-checkbox{
   min-height: 99px;
+}
+.list-radio{
+  min-height: 97px;
 }
 .catalog-filter-item{
   font-size: 18px;
@@ -658,14 +678,11 @@ html {
 .catalog-filter-item:active{
   opacity: 0.3;
 }
-.radio-disk{
-  background-color: #fff;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: relative;
-}
+.control{
+  font-family: inherit;
+  font-weight: 400;
 
+}
 .radio-disk{
   background-color: #fff;
   width: 20px;
@@ -678,6 +695,7 @@ html {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin: 0;
 }
 
 .radio-disk:checked::after {
@@ -697,7 +715,7 @@ html {
 .control-input-checkbox{
   background-color: #fff;
   width: 20px;
-  height: 19px;
+  height: 20px;
   border: 0;
   border-radius: 4px;
   background-image: none;
@@ -706,12 +724,13 @@ html {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin: 0;
 }
 .control-input-checkbox:checked::after{
   content: "";
   background-color: #fff;
   width: 20px;
-  height: 19px;
+  height: 20px;
   border: 0;
   border-radius: 4px;
   background-image: url(../images/tick_checkbox.svg);
@@ -748,11 +767,12 @@ html {
 .control-input{
   background: #f2f2f2;
   border: 2px #f2f2f2 solid;
-  padding: 10px 18px;
+  padding: 11px 18px 9px 18px;
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
   width: 143px;
+  font-family: inherit;
 }
 .control-input::placeholder{
   font-size: 18px;
@@ -766,8 +786,9 @@ html {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 12px;
-  left: 106px;
+  top: 13px;
+  right: 20px;
+
 }
 .right-input{
   position: relative;
@@ -800,11 +821,11 @@ html {
   width: 191px;
   margin-left: 70px;
 }
-
 .range-scale{
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
+  margin: 8px 0;
 }
 .range-bar {
   position: absolute;
@@ -892,6 +913,7 @@ html {
 }
 .catalog-sorting-result{
   font-family: inherit;
+  text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -911,14 +933,14 @@ html {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  padding: 14px 20px;
+  padding: 13px 18px 11px 18px;
   min-width: 292px;
   border-radius: 4px;
   border: 2px #E5E5E5 solid;
   cursor: pointer;
   background-image: url(../images/tick_select.svg);
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   appearance: none;
 }
 .select-control:hover{
@@ -1050,7 +1072,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 20px;
+  padding: 8px 18px;
 }
 
 .button-card{
@@ -1086,7 +1108,7 @@ html {
 }
 .divider-catalog{
   padding: 0;
-  margin: 40px auto;
+  margin: 40px auto 39px;
 }
 .pagination-block{
   min-width: 1060px;
@@ -1109,7 +1131,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding: 12px 23px;
+  box-sizing: border-box;
+  padding: 12px 21px;
+  min-width: 60px;
   margin-right: 8px;
   cursor: pointer;
   color:#fff;
@@ -1208,7 +1232,6 @@ html {
   width: 717px;
   padding: 64px 70px;
   margin: auto;
-  margin-top: 100px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
