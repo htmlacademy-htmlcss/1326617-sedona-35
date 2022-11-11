@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .body-container{
-  width: 1200px;
+  min-width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   margin: 0 auto;
@@ -66,14 +66,14 @@ html {
   align-items: center;
   margin: 0;
   min-height: 64px;
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 .navigation-block-one{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 507px;
+  min-width: 507px;
   position: relative;
 }
 .logo{
@@ -131,8 +131,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: center;
-  padding: 21px 16px 19px;
+  padding: 20px 16px;
 }
 
 .navigation-link-current::before{
@@ -148,7 +147,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 34px;
+  padding: 9px 35px 7px 34px;
   border-radius: 4px;
 }
 .navigation-button{
@@ -162,13 +161,10 @@ html {
   background-color: #756157;
   margin-left: 20px;
 }
-.page-container{
-  width: 1200px;
-  margin: 0 auto;
-}
+
 .hero{
-  width: 1200px;
-  height: 485px;
+  min-width: 1200px;
+  min-height: 485px;
   margin: 0 auto;
   background-image: url(../images/divider.png), url(../images/hero_background.jpg);
   background-repeat: no-repeat;
@@ -189,9 +185,12 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
 }
 .advantages-about-description{
   text-align: center;
+  margin: 0;
 }
 .advantages-item{
   list-style-type: none;
@@ -219,6 +218,7 @@ html {
   padding: 0;
   margin: 0;
   display: block;
+  min-width: 800px;
 }
 .block-dark-blue{
   background-color:  #82B3D3;
@@ -235,13 +235,13 @@ html {
   padding-bottom: 81px;
 }
 .block-middle-blue{
-  background-color: #E6F0F6;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .block-white{
   background-color: #fff;
 }
 .block-light-blue{
-  background-color: #F0F6FA;
+  background-color:rgba(131, 179, 211, 0.12);
 }
 
 .advantages-title{
@@ -296,9 +296,9 @@ html {
   margin-top: 30px;
 }
 .call-to-action{
-  width: 1200px;
+  min-width: 1200px;
   background-color: #fff;
-  padding: 96px 304px;
+  padding: 98px 304px 95px;
   box-sizing: border-box;
 }
 .call-to-action-content{
@@ -306,7 +306,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 592px;
+  min-width: 592px;
   margin:0;
 }
 .call-to-action-title{
@@ -319,7 +319,7 @@ html {
 }
 .call-to-action-description{
   text-align: center;
-  margin: 0 0 54px 0;
+  margin: 0 0 53px 0;
 }
 .call-to-action-search{
   font-size: 20px;
@@ -337,10 +337,11 @@ html {
 }
 .subscribe-container{
   background-image: url(../images/subscribe.jpg);
-  width: 1200px;
-  height: 414px;
+  min-width: 1200px;
+  min-height: 414px;
   background-repeat: no-repeat;
   background-position: center;
+  vertical-align: middle;
   background-color: gray;
   margin: 0;
 }
@@ -349,7 +350,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 98px 258px 104px 258px;
+  padding: 97px 258px 104px 258px;
 }
 .subscribe-title{
   font-size: 30px;
@@ -369,16 +370,16 @@ html {
 }
 .subscribe-form{
   display: flex;
-  flex-direction: row;
 }
 .subscribe-form-input{
-  border: 2px #fff solid;
   border-radius: 4px 0 0 4px;
   padding: 11px 20px 9px 18px;
   flex-grow: 1;
   font-family: inherit;
+  background-color: #F2F2F2;
   font-size: 18px;
   line-height: 24px;
+  border: 2px #F2F2F2 solid;
 }
 .subscribe-form-input:hover{
   background-color: #E6E6E6;
@@ -466,7 +467,7 @@ html {
 }
 
 .footer-social-network-list{
-  width: 142px;
+  min-width: 142px;
   height: auto;
   display: flex;
   justify-content:flex-start;
@@ -539,8 +540,8 @@ html {
 
 .filter-block{
   background-image: url(../images/background_filter.jpg);
-  width: 1200px;
-  height: 412px;
+  min-width: 1200px;
+  min-height: 412px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: top;
@@ -598,8 +599,8 @@ html {
 .breadcrumbs-link:active{
   color:rgba(255, 255, 255, 0.3);
 }
-.imain-inner{
-  width: 1060px;
+.main-inner{
+  min-width: 1200px;
   margin: 0 auto;
 }
 .catalog-filter{
@@ -618,7 +619,7 @@ html {
   list-style-type: none;
   color:#fff;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   font-family: inherit;
 }
@@ -633,7 +634,7 @@ html {
 }
 .catalog-filter-group{
   border: none;
-  width: 150px;
+  min-width: 150px;
   padding: 0;
   margin: 0;
 }
@@ -650,7 +651,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 .list-checkbox{
   min-height: 99px;
@@ -754,7 +754,7 @@ html {
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: 288px;
+  min-width: 288px;
 }
 
 .control-block{
@@ -818,7 +818,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 191px;
+  min-width: 191px;
   margin-left: 70px;
 }
 .range-scale{
@@ -924,7 +924,7 @@ html {
   position: relative;
   display: flex;
   align-items: center;
-  width: 260px;
+  min-width: 292px;
   margin-right: auto;
 }
 .select-control{
@@ -1195,21 +1195,14 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
   min-height: 414px;
   min-width: 684px;
 }
 .subscribe-form{
   min-width: 684px;
 }
-.black{
+.subscribe-text-black{
   color: #000;
-}
-.input-gray{
-  background-color: #F2F2F2;
-  font-size: 18px;
-  line-height: 24px;
-  border: 2px #F2F2F2 solid;
 }
 
 /* форма */
@@ -1227,15 +1220,17 @@ html {
 .modal:target{
   display: block;
 }
+
 .modal-container{
   background-color: #fff;
   width: 717px;
   padding: 64px 70px;
   margin: auto;
+  margin-top: 100px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  box-sizing:border-box;
+  box-sizing: border-box;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
@@ -1244,7 +1239,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  width: 577px;
+  min-width: 577px;
 }
 .block-title{
   display: flex;
