@@ -681,7 +681,6 @@ html {
 .control{
   font-family: inherit;
   font-weight: 400;
-
 }
 .radio-disk{
   background-color: #fff;
@@ -788,7 +787,6 @@ html {
   position: absolute;
   top: 13px;
   right: 20px;
-
 }
 .right-input{
   position: relative;
