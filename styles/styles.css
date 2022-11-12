@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style:normal;
   font-weight:400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -41,7 +41,9 @@ body {
   flex-direction: column;
   margin: 0 auto;
 }
-
+.main-index{
+  max-width: 1200px;
+}
 .visually-hidden{
   display: none;
 }
@@ -175,9 +177,11 @@ html {
   margin: 0 auto;
 }
 .advantages-about{
-  padding-top: 69px;
+  padding-top: 68px;
   padding-bottom: 90px;
   background-color: #fff;
+  margin: 0 auto;
+  min-width: 1200px;
 }
 .advantages-about-title{
   font-size: 30px;
@@ -431,6 +435,7 @@ html {
   align-items: center;
   flex-grow: 1;
   min-height: 50px;
+  max-width: 340px;
 }
 .footer-contacts-phone{
   font-size: 40px;
@@ -551,8 +556,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-height: 307px;
   margin: 0;
-  padding: 35px 70px 70px 70px;
+  padding: 32px 70px 70px 70px;
 }
 .inner-head-title{
   font-size: 60px;
@@ -560,7 +566,7 @@ html {
   text-align: left;
   color:#fff;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .breadcrumbs{
   display: flex;
@@ -568,7 +574,7 @@ html {
   align-items: center;
   min-height: 21px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding:0;
 }
 .breadcrumbs-item{
@@ -602,6 +608,7 @@ html {
 .main-inner{
   min-width: 1200px;
   margin: 0 auto;
+  max-width: 1060px;
 }
 .catalog-filter{
   display: flex;
@@ -614,13 +621,14 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  min-height: 160px;
 }
 .catalog-filter-item{
   list-style-type: none;
   color:#fff;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items:flex-start;
   font-family: inherit;
 }
 .catalog-filter-title{
@@ -629,7 +637,7 @@ html {
   font-weight: 700;
   color:#fff;
   padding: 0;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
   font-family: inherit;
 }
 .catalog-filter-group{
@@ -666,11 +674,15 @@ html {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   cursor: pointer;
 }
 .catalog-filter-item label{
   margin-left: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  margin-top: -1px;
 }
 .catalog-filter-item:hover{
   opacity: 0.6;
@@ -678,17 +690,12 @@ html {
 .catalog-filter-item:active{
   opacity: 0.3;
 }
-.control{
-  font-family: inherit;
-  font-weight: 400;
-}
+
 .radio-disk{
   background-color: #fff;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  outline: none;
-  border: none;
   position: relative;
   cursor: pointer;
   -webkit-appearance: none;
@@ -707,8 +714,6 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  outline: none;
-  border: 0;
 }
 
 .control-input-checkbox{
@@ -892,7 +897,7 @@ html {
   padding: 50px 70px 60px 70px;
   margin: 0 auto;
   background-color: #fff;
-  min-width: 1060px;
+  max-width: 1060px;
 }
 .catalog-sorting{
   display: flex;
@@ -900,7 +905,7 @@ html {
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  min-width: 1060px;
+  width: 1060px;
   margin-bottom: 40px;
 }
 .catalog-sorting-right{
@@ -917,6 +922,7 @@ html {
   font-weight: 700;
   color: #000;
   margin: 0;
+  flex-grow: 1;
 }
 .select {
   position: relative;
@@ -985,9 +991,10 @@ html {
 .product-list{
   display: grid;
   margin: 0 auto;
-  width: 1060px;
+  max-width: 1060px;
+  height: auto;
   grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 438px 438px;
+  grid-template-rows: auto auto;
   padding: 0;
   gap: 20px;
 }
@@ -1135,6 +1142,9 @@ html {
   margin-right: 8px;
   cursor: pointer;
   color:#fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .pagination-item:first-child{
   background-color: #F2F2F2;
