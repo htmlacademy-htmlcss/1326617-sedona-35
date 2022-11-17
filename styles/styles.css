@@ -252,6 +252,7 @@ html {
   margin: 0 auto;
   padding: 0;
 }
+
 .advantages-image {
   padding: 0;
   margin: 0;
@@ -437,8 +438,8 @@ html {
   border-radius: 4px 0 0 4px;
   padding: 11px 20px 9px 18px;
   flex-grow: 1;
-  font-family: inherit;
   background-color: #f2f2f2;
+  font-family: "PT Sans", "Roboto", sans-serif;
   font-size: 18px;
   line-height: 24px;
   border: 2px #f2f2f2 solid;
@@ -651,6 +652,7 @@ html {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
+
 /* catalog */
 
 .filter-block {
@@ -884,10 +886,7 @@ html {
 }
 
 .control {
-  width: 105px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 150px;
 }
 
 .catalog-filter-right {
@@ -997,6 +996,8 @@ html {
   position: absolute;
   height: 4px;
   background-color: #fff;
+  width: 226px;
+  left: 0;
 }
 
 .range-toggle {
@@ -1331,7 +1332,10 @@ html {
 .pagination-item {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   margin-right: 8px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .pagination-link {
@@ -1344,13 +1348,13 @@ html {
   background-color: #82b3d3;
   border: 1px #82b3d3 solid;
   border-radius: 4px;
+  margin: 0;
   padding: 11px 23px;
-  max-width: 60px;
-  max-height: 60px;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: block;
 }
 
 .pagination-current {
@@ -1523,18 +1527,17 @@ html {
   border-radius: 4px;
   width: 440px;
   background-color: #f2f2f2;
+  font-family: "PT Sans", "Roboto", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   border: 2px #f2f2f2 solid;
   box-sizing: border-box;
+  color: #000;
 }
 
 .input-calendar::placeholder {
   color: #000;
-  font-family: "PT Sans", "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
 }
 
 .block-input {
@@ -1558,7 +1561,7 @@ html {
 .text-info {
   font-family: "PT Sans", "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 .text-info-error {
